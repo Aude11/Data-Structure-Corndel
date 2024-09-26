@@ -1,0 +1,19 @@
+
+
+
+-Option A:  The time it takes to process requests grows linearly with the number of borrowers (n) and lenders (m), but it uses a lot of memory as it grows exponentially (meaning memory needs can become huge very quickly). Not a good solution due to memery massive issue.
+  
+- Option B This one is quicker in terms of processing time (O(n*log(m))), and its memory usage increases more slowly compared to Option A (O(n*m)).
+  
+- Option C: It has a moderate speed (O(n*m)),less then Option B. And its memory usage is manageable (O(n+m)). it uses less memory than both Option A and B as it grows linearly with borrowers and lenders.
+
+As the speed is more important than memory, Option B is the best option for this case.
+-----------------------
+
+To store this list of products, I would use a linked list or priority queue (new data structe that I did not know Java has):
+
+- Linked List: This allows for easy insertion of new products because you can add them wherever needed without having to move many other items around. 
+
+- Priority Queue: This helps prioritize short-dated or low-stock items so they can be stacked first. 
+
+For this case, speed of insertion and order are important.
